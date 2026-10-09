@@ -1,0 +1,6 @@
+{
+  "name": "শুভ মহালয়া — মায়ের আগমনী বার্তা",
+  "description": "মহালয়া ও মা দুর্গার আগমনী উপলক্ষে একটি অনন্য ত্রিমাত্রিক (3D) ভক্তিময় অভিজ্ঞতা ও ব্যক্তিগত শুভেচ্ছা বার্তা প্রেরণের মাধ্যম।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

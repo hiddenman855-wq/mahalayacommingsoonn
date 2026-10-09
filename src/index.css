@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Hind Siliguri', sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-bengali {
+    font-family: 'Noto Serif Bengali', serif;
+  }
+}
+
+/* 3D Perspective utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.perspective-1500 {
+  perspective: 1500px;
+}
+.perspective-2000 {
+  perspective: 2000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Golden shimmer animations */
+@keyframes goldenGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(234, 179, 8, 0.4)) drop-shadow(0 0 35px rgba(217, 119, 6, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(250, 204, 21, 0.7)) drop-shadow(0 0 60px rgba(245, 158, 11, 0.4));
+  }
+}
+
+.animate-golden-glow {
+  animation: goldenGlow 4s ease-in-out infinite;
+}
+
+@keyframes floatKey {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+.animate-float-key {
+  animation: floatKey 3s ease-in-out infinite;
+}
+
+@keyframes divineRayRotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.animate-divine-rays {
+  animation: divineRayRotate 25s linear infinite;
+}
+
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+  }
+  25% {
+    transform: scale(1.04, 0.97) rotate(1deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.97, 1.03) rotate(-1.5deg);
+    opacity: 0.92;
+  }
+  75% {
+    transform: scale(1.02, 1.01) rotate(0.8deg);
+    opacity: 0.98;
+  }
+}
+
+.animate-flame-flicker {
+  animation: flameFlicker 0.25s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* Shiuli Flower falling animation */
+@keyframes petalFall {
+  0% {
+    transform: translateY(-20px) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(105vh) translateX(60px) rotate(360deg);
+    opacity: 0;
+  }
+}
